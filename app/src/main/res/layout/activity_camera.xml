@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fa0410"
+    >
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+
+        />
+
+
+
+    <TextView
+        android:id="@+id/take_picture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="拍照"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        />
+
+    <FrameLayout
+        android:layout_centerInParent="true"
+        android:id="@+id/border_ar"
+        android:background="@drawable/boder_bg"
+        android:layout_width="300dp"
+        android:layout_height="250dp"/>
+
+    <ImageView
+        android:layout_centerInParent="true"
+        android:id="@+id/image_view"
+        android:layout_width="250dp"
+        android:layout_height="300dp" />
+
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/orgin_image_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+</RelativeLayout>
